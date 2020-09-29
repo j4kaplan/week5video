@@ -1,7 +1,8 @@
 def main():
     file = open("silly.txt",'r')
     all_of_file = file.readlines()
-    print(all_of_file)
+    for line in all_of_file:
+        print(line)
 
 
 def reverser():
