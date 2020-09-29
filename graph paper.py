@@ -8,6 +8,8 @@ def draw_lines ():
     #drawing goes here
     for location in range (80,width, 80):
         arcade.draw_line(location,0,location, height, arcade.color.BLACK_OLIVE, 2)
+        for location2 in range (80,height,80):
+            arcade.draw_line(0, location2,width, location2,arcade.color.BLACK_OLIVE,2)
     arcade.finish_render()
 
     arcade.run()
